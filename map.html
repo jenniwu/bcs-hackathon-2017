@@ -20,9 +20,12 @@
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Theme CSS -->
     <link href="css/agency.min.css" rel="stylesheet">
+    <link href="css/browse-post.css" rel="stylesheet">
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -78,349 +81,142 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">What's for breakfast, lunch, and dinner?</div>
-                <div class="intro-heading">Find your next meal on Two Can Dine</div>
-                <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+                <div class="intro-heading">Explore your cultural tastebuds</div>
             </div>
         </div>
     </header>
 
-    <!-- Ploted Map -->
+<!--     posting and map -->
     <div class="container-fluid">
-    <h1>
-      <image src="snowandtree.jpg" />
-      <span id="title">
-      <!-- <img src="http://opendata.newwestcity.ca/images/city-of-new-westminster.png" style="height:70px;"> -->
-      New Westminster Helping Hub</span>
+    <div class="row"><br></div>
+    <div class="row"><br></div>
+    <div class="row"><br></div>
+    <div class="col-md-8">
 
-      <a href="login_form.html" class='btn btn-primary pull-right inline'>Log in</button>
-       <a href="report_form.html" class="btn btn-warning pull-right inline">Ask For Help!</a>
-      <a href="index.html" class='btn btn-default pull-right inline'>Home</a>
+    <!-- First row of postings -->
+    <div class="row">
+        <div class="col-md-4">
+          <div class="cuadro_intro_hover " style="background-color:#cccccc;">
+              <p style="text-align:center; margin-top:20px;">
+                <img src="https://www.medibank.com.au/bemagazine/app/uploads/55PrawnRavioli_2998-15.jpg" class="img-responsive" alt="">
+              </p>
+              <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                  <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">PRAWN RAVIOLI</h3>
+                  <p>butternut squash and mascarpone ravioli, truffle butter sauce, sautéed jumbo prawns, pine nuts</p>
+                  <a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> INFO</span></a>
+                </div>
+              </div>
+            </div>
+        </div>  
+        <div class="col-md-4">
+          <div class="cuadro_intro_hover " style="background-color:#cccccc;">
+              <p style="text-align:center; margin-top:20px;">
+                <img src="http://img.finedininglovers.com/?img=http%3A%2F%2Ffinedininglovers.cdn.crosscast-system.com%2FBlogPost%2FOriginal_5752_StockFood-00322258.jpg&w=1200&h=660&lu=1378821535&ext=.jpg" class="img-responsive" alt="">
+              </p>
+              <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                  <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">TUNA SUSHI CONE</h3>
+                  <p>spicy albacore, hand rolled with avocado, cucumber, pickled ginger, tempura, micro cilantro, green onion, soy paper wrapper</p>
+                  <a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> INFO</span></a>
+                </div>
+              </div>
+            </div>
+        </div>  
 
-
-    </h1>
-
-
-    <div class="alert alert-danger">
-      <marquee behavior="scroll" direction="left"><strong>Alert: </strong>Snowfall warning in effect, view map for traffic updates. Please remember to dress warm.</marquee>
+        <div class="col-md-4">
+          <div class="cuadro_intro_hover " style="background-color:#cccccc;">
+              <p style="text-align:center; margin-top:20px;">
+                <img src="https://s-media-cache-ak0.pinimg.com/564x/52/89/f8/5289f81fd18f20c015c58118fba7380b.jpg" class="img-responsive" alt="">
+              </p>
+              <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                  <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">SOY-DIJON SALMON</h3>
+                  <p>steelhead, whole grain barley, snap peas, shiitake mushrooms, soy butter sauce, grape tomatoes, cilantro</p>
+                  <a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> INFO</span></a>
+                </div>
+              </div>
+            </div>
+        </div>  
     </div>
 
-    <div class="row">
-      <div class="col-md-6">
-        <div id="filter-menu">
-          <div class="row">
-            <div class="col-xs-2">
-              <div class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Categories:
-              <span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                  <li><a href="#" id="all" onclick="filterAll()">All</a></li>
-                  <li><a href="#" id="snow-ice" onclick="filterSnow()">Snow/Ice</a></li>
-                  <li><a href="#" id="tree" onclick="filterTree()">Fallen Tree</a></li>
-                  <li><a href="#" id="other" onclick="filterOther()">Other</a></li>
-                </ul>
+  <div class="row"><br></div>
+  <div class="row"><br></div>
+
+  
+<!--     Second row of postings -->
+  <div class="row">
+          <div class="col-md-4">
+            <div class="cuadro_intro_hover " style="background-color:#cccccc;">
+                <p style="text-align:center; margin-top:20px;">
+                  <img src="http://chewoutloud.files.wordpress.com/2012/09/grilled-flatbread-like-naan1.jpg" class="img-responsive" alt="">
+                </p>
+                <div class="caption">
+                  <div class="blur"></div>
+                  <div class="caption-text">
+                    <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">NAAN</h3>
+                    <p>homemade oven-baked</p>
+                    <a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> INFO</span></a>
+                  </div>
+                </div>
               </div>
-            </div>
-
-            <div class="col-xs-2">
-              <div class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Urgency:
-              <span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                  <li><a href="#" id="all" onclick="filterAll()">All</a></li>
-                  <li><a href="#" onclick="filterHigh()">High</a></li>
-                  <li><a href="#" onclick="filterMedium()">Medium</a></li>
-                  <li><a href="#" onclick="filterLow()">Low</a></li>
-                </ul>
+          </div>  
+          <div class="col-md-4">
+            <div class="cuadro_intro_hover " style="background-color:#cccccc;">
+                <p style="text-align:center; margin-top:20px;">
+                  <img src="http://herbivoracious.com/images/old/6a00e008d618bb88340148c707abaa970c-800wi.jpg" class="img-responsive" alt="">
+                </p>
+                <div class="caption">
+                  <div class="blur"></div>
+                  <div class="caption-text">
+                    <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">KIMCHI FRIED RICE</h3>
+                    <p>fried rice with kimchi made with love</p>
+                    <a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> INFO</span></a>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div id="search-box" class="col-xs-6">
-              <input class="pull-right" type="text" placeholder="Search keyword">
-            </div>
+          </div>  
 
-            <div class="col-xs-2">
-              <button class='btn btn-info pull-right'>Search</button>
-            </div>
+          <div class="col-md-4">
+            <div class="cuadro_intro_hover " style="background-color:#cccccc;">
+                <p style="text-align:center; margin-top:20px;">
+                  <img src="http://momsrecipes.info/wp-content/uploads/2013/08/Kung-Pao-Chicken.jpg" alt="">
+                </p>
+                <div class="caption">
+                  <div class="blur"></div>
+                  <div class="caption-text">
+                    <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">KUNGPAO CHICKEN</h3>
+                    <p>Spicey stirfry chicken, peanuts, vegetables, and chili peppers</p>
+                    <a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> INFO</span></a>
+                  </div>
+                </div>
+              </div>
+          </div>  
+      </div>
 
-          </div>
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <ul class="pagination">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            </ul>
         </div>
-
+        <div class="col-md-4"></div>
       </div>
-
-      <div class="col-md-6">
-        <a id="flag-button" href="flag_form.html" class='btn btn-danger pull-right inline'>Flag an Accident or Detour</a>
-
-      </div>
-    </div>
-
-    <!-- user info and map-->
-    <div class="row">
-      <div class="col-md-6">
-        <div id="postings" class="well">
-          <!-- added posting -->
-
-          <div id="post0" class="post-box">
-            <div class="row">
-              <div style="font:15px;" class="col-xs-8">
-                <p><strong>New Westminster City Hall</strong></p>
-              </div>
-              <div class="col-xs-4">
-                <p class="pull-right">Unresolved</p>
-                <p style="color:red;font-style: italic;">New</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-8">
-                <p><strong>Contact info: </strong> 604-788-2333</p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-xs-8">
-                <p><strong>Urgency: </strong>High</p>
-              </div>
-              <div class="col-xs-4">
-                <p class="pull-right"><strong>0.1 km away</strong></p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-9">
-                <p><strong>Description: </strong>The city hall needs your help! Too many cars are stuck on the hill, we would
-                  really appreciate it if the community can help with clearing the snow!</p>
-              </div>
-              <div class="col-xs-1">
-              </div>
-              <div class="col-xs-2">
-                <a href="login_form.html" class='btn btn-success pull-right'>I can help!</a>
-              </div>
-            </div>
-          </div>
-          <!-- first posting -->
-
-          <div id="post1" class="post-box">
-            <div class="row">
-              <div style="font:15px;" class="col-xs-8">
-                <p><strong>668 Columbia Street </strong></p>
-              </div>
-              <div class="col-xs-4">
-                <p class="pull-right">Unresolved</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-8">
-                <p><strong>Contact info: </strong> 604-788-9090</p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-xs-8">
-                <p><strong>Urgency: </strong>High</p>
-              </div>
-              <div class="col-xs-4">
-                <p class="pull-right"><strong>1.6 km away</strong></p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-9">
-                <p><strong>Description: </strong>Car stuck on hill, need help clearing the snow</p>
-              </div>
-              <div class="col-xs-1">
-              </div>
-              <div class="col-xs-2">
-                <a href="login_form.html" class='btn btn-success pull-right'>I can help!</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- second posting -->
-          <div id="post2" class="post-box">
-            <div class="row">
-              <div style="font:15px;" class="col-xs-8">
-                <p> <strong>109 Francis Way </strong></p>
-              </div>
-              <div class="col-xs-4">
-                <p class="pull-right">Unresolved</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-8">
-                <p><strong>Contact info: </strong>604-345-0983</p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-xs-8">
-                <p><strong>Urgency: </strong>Medium</p>
-              </div>
-              <div class="col-xs-4">
-                <p class="pull-right"><strong>2.0 km away</strong></p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-9">
-                <p><strong>Description: </strong>Family away on vacation, can someone please help shovel snow on the sidewalk?
-                  Thank you in advance!</p>
-              </div>
-              <div class="col-xs-1">
-              </div>
-              <div class="col-xs-2">
-                <a href="login_form.html" class='btn btn-success pull-right'>I can help!</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- third posting -->
-          <div id="post3" class="post-box">
-            <div class="row">
-              <div style="font:15px;" class="col-xs-8">
-                <p><strong>1045 Quayside Drive</strong></p>
-              </div>
-              <div class="col-xs-4">
-                <p class="pull-right">Unresolved</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-8">
-                <p><strong>Contact info: </strong>778-464-8809</p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-xs-8">
-                <p><strong>Urgency: </strong>Low</p>
-              </div>
-              <div class="col-xs-4">
-                <p class="pull-right"><strong>2.7 km away</strong></p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-9">
-                <p><strong>Description: </strong>Fallen tree in the front yard, would appreciate it if someone can help me clear
-                  it!</p>
-              </div>
-              <div class="col-xs-1">
-              </div>
-              <div class="col-xs-2">
-                <a href="login_form.html" class='btn btn-success pull-right'>I can help!</a>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- fourth posting -->
-          <div id="post4" class="post-box">
-            <div class="row">
-              <div style="font:15px;" class="col-xs-8">
-                <p><strong>31 Capilano Way</strong></p>
-              </div>
-              <div class="col-xs-4">
-                <p class="pull-right">Unresolved</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-8">
-                <p><strong>Contact info: </strong>778-464-8809</p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-xs-8">
-                <p><strong>Urgency: </strong>Low</p>
-              </div>
-              <div class="col-xs-4">
-                <p class="pull-right"><strong>3.2 km away</strong></p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-9">
-                <p><strong>Description: </strong>Senior need help with snow shoveling</p>
-              </div>
-              <div class="col-xs-1">
-              </div>
-              <div class="col-xs-2">
-                <a href="login_form.html" class='btn btn-success pull-right'>I can help!</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Fifth posting -->
-          <div id="post5" class="post-box">
-            <div class="row">
-              <div style="font:15px;" class="col-xs-8">
-                <p><strong>850 Royal Ave</strong></p>
-              </div>
-              <div class="col-xs-4">
-                <p class="pull-right">Unresolved</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-8">
-                <p><strong>Contact info: </strong>778-861-0959</p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-xs-8">
-                <p><strong>Urgency: </strong>Medium</p>
-              </div>
-              <div class="col-xs-4">
-                <p class="pull-right"><strong>4.5 km away</strong></p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-9">
-                <p><strong>Description: </strong>Icy driveway, can someone please bring a shovel and help clear the ice? Thanks!</p>
-              </div>
-              <div class="col-xs-1">
-              </div>
-              <div class="col-xs-2">
-                <a href="login_form.html" class='btn btn-success pull-right'>I can help!</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Sixth posting -->
-          <div id="post6" class="post-box">
-            <div class="row">
-              <div style="font:15px;" class="col-xs-8">
-                <p><strong>306 Sixth Street</strong></p>
-              </div>
-              <div class="col-xs-4">
-                <p class="pull-right">Unresolved</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-8">
-                <p><strong>Contact info: </strong>604-883-8395</p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-xs-8">
-                <p><strong>Urgency: </strong>High</p>
-              </div>
-              <div class="col-xs-4">
-                <p class="pull-right"><strong>6.2 km away</strong></p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-9">
-                <p><strong>Description: </strong>Big Tree fallen onto driveway</p>
-              </div>
-              <div class="col-xs-1">
-              </div>
-              <div class="col-xs-2">
-                <a href="login_form.html" class='btn btn-success pull-right'>I can help!</a>
-              </div>
-            </div>
-          </div>
+  </div>
+  
 
           <!-- END user info -->
-        </div>
-      </div>
 
-      <div class="col-md-6">
-        <div id="map"></div>
+      <div class="col-md-4">
+      <div id="map"></div>
           <script>
           	$(document).ready(function() {
               $(".dropdown-toggle").dropdown();
@@ -452,7 +248,7 @@
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 13,
           center: acc_1
-          <!--zoom: 4,-->
+          <!--zoom: 4 -->
         <!--center: {lat: -28, lng: 137}-->
 
         <!--
@@ -548,77 +344,10 @@
         'BUS_ROUTES.geojson');
     }
 
-    function filterAll() {
-      document.getElementById("post0").style.display = "";
-      document.getElementById("post1").style.display = "";
-      document.getElementById("post2").style.display = "";
-      document.getElementById("post3").style.display = "";
-      document.getElementById("post4").style.display = "";
-      document.getElementById("post5").style.display = "";
-      document.getElementById("post6").style.display = "";
-    }
-    function filterSnow() {
-      document.getElementById("post0").style.display = "";
-      document.getElementById("post1").style.display = "";
-      document.getElementById("post2").style.display = "";
-      document.getElementById("post3").style.display = "none";
-      document.getElementById("post4").style.display = "";
-      document.getElementById("post5").style.display = "";
-      document.getElementById("post6").style.display = "none";
-    }
 
-    function filterTree() {
-      document.getElementById("post0").style.display = "none";
-      document.getElementById("post1").style.display = "";
-      document.getElementById("post2").style.display = "none";
-      document.getElementById("post3").style.display = "";
-      document.getElementById("post4").style.display = "none";
-      document.getElementById("post5").style.display = "none";
-      document.getElementById("post6").style.display = "";
-    }
-
-    function filterOther() {
-      document.getElementById("post0").style.display = "none";
-      document.getElementById("post1").style.display = "none";
-      document.getElementById("post2").style.display = "none";
-      document.getElementById("post3").style.display = "none";
-      document.getElementById("post4").style.display = "none";
-      document.getElementById("post5").style.display = "none";
-      document.getElementById("post6").style.display = "none";
-    }
-
-    function filterHigh() {
-      document.getElementById("post0").style.display = "";
-      document.getElementById("post1").style.display = "";
-      document.getElementById("post2").style.display = "none";
-      document.getElementById("post3").style.display = "none";
-      document.getElementById("post4").style.display = "none";
-      document.getElementById("post5").style.display = "none";
-      document.getElementById("post6").style.display = "";
-    }
-
-    function filterMedium() {
-      document.getElementById("post0").style.display = "none";
-      document.getElementById("post1").style.display = "none";
-      document.getElementById("post2").style.display = "";
-      document.getElementById("post3").style.display = "none";
-      document.getElementById("post4").style.display = "none";
-      document.getElementById("post5").style.display = "";
-      document.getElementById("post6").style.display = "none";
-    }
-    function filterLow() {
-      document.getElementById("post0").style.display = "none";
-      document.getElementById("post1").style.display = "none";
-      document.getElementById("post2").style.display = "none";
-      document.getElementById("post3").style.display = "";
-      document.getElementById("post4").style.display = "";
-      document.getElementById("post5").style.display = "none";
-      document.getElementById("post6").style.display = "none";
-    }
-    </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzIJK2jYh-K8EMENlbTxm1_PYRK4Kq4p4&callback=initMap">
-    </script>-->
+    </script>
 
     <footer>
         <div class="container">
