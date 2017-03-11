@@ -11,7 +11,11 @@
  }
  .text-primary,a{color:#fed136
  }
- p{font-size:20px;line-height:1.75;font-family: monospace;
+ header {
+   height: 75%;
+   width: 75%;
+ }
+ p{font-size:14px;line-height:1.75;font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
  }
  p.large{font-size:16px
  }
