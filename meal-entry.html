@@ -21,8 +21,13 @@
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
+
     <!-- Theme CSS -->
     <link href="css/agency.min.css" rel="stylesheet">
+
+    <!-- Meal Entry Cuisine Button CSS  -->
+
+    <link href="css/button.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -75,10 +80,9 @@
     </nav>
 
     <!-- Header -->
-    <header>
-        <img src="meal-entry-photo.jpg" class="img-responsive" alt="header photo"/></a>
+    <header style="background-image: url('meal-entry-photo.jpg');">
         <div class="container">
-            <div class="intro-text">
+            <div class="intro-text" style="color: white;">
                 <div class="intro-heading">Describe Your Meal!</div>
             </div>
         </div>
@@ -101,10 +105,36 @@
                     </div>
                     <div class="col-md-10">
                     <div class="btn-group">
-                        <button id="dropdown-button" class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <div class="form-group">
+                              <div class="col-sm-6 col-md-4">
+                                <select id="company" class="form-control">
+                                    <option>American</option>
+                                    <option>British</option>
+                                    <option>Caribbean</option>
+                                    <option>Chinese</option>
+                                    <option>Filipino</option>
+                                    <option>French</option>
+                                    <optoin>Greek</option>
+                                    <option>Indian</option>
+                                    <option>Indonesian</a></li>
+                                    <li><a href="#" data-value="Italian">Italian</a></li>
+                                    <li><a href="#" data-value="Japanese">Japanese</a></li>
+                                    <li><a href="#" data-value="Mediterranean">Mediterranean</a></li>
+                                    <li><a href="#" data-value="Mexican">Mexican</a></li>
+                                    <li><a href="#" data-value="Moroccan">Moroccan</a></li>
+                                    <li><a href="#" data-value="Persian">Persian</a></li>
+                                    <li><a href="#" data-value="Spanish">Spanish</a></li>
+                                    <li><a href="#" data-value="Thai">Thai</a></li>
+                                    <li><a href="#" data-value="Turkish">Turkish</a></li>
+                                    <li><a href="#" data-value="Vietnamnese">Vietnamnese</a></li>
+                                    <li><a href="#" data-value="Other">Other</a></li>
+                                </select> 
+                              </div>
+                            </div>
+<!--                         <button id="dropdown-button" class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                         <span id="selected">Choose a cuisine</span>
                         <span class="caret"></span>
-                        </button>
+                        </button> -->
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                         <li><a href="#" data-value="American">American</a></li>
                         <li><a href="#" data-value="British">British</a></li>
