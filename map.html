@@ -74,17 +74,6 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">What's for breakfast, lunch, and dinner?</div>
-                <div class="intro-heading">Find your next meal on Two Can Dine</div>
-                <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
-            </div>
-        </div>
-    </header>
-
     <!-- Ploted Map -->
     <div class="container-fluid">
     <h1>
@@ -99,11 +88,6 @@
 
 
     </h1>
-
-
-    <div class="alert alert-danger">
-      <marquee behavior="scroll" direction="left"><strong>Alert: </strong>Snowfall warning in effect, view map for traffic updates. Please remember to dress warm.</marquee>
-    </div>
 
     <div class="row">
       <div class="col-md-6">
@@ -414,239 +398,58 @@
               </div>
             </div>
           </div>
-
-          <!-- END user info -->
         </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-4">
         <div id="map"></div>
-          <script>
-          	$(document).ready(function() {
-              $(".dropdown-toggle").dropdown();
+      </div>
+    </div>
 
-  //     jQuery("#snow-ice").on('click',function(){
-  //   filterPostsByCategory("Snow/Ice");
-  //   // e.preventDefault();
-  // });
-  // jQuery("#tree").on('click',function(){
-  //   filterPostsByCategory("Fallen Tree");
-  //   // e.preventDefault();
-  // });
-  // jQuery("#other").on('click',function(){
-  //   filterPostsByCategory("Other");
-  //   // e.preventDefault();
-  // });
+    <script>
+    function initMap() {
+      var acc_0 = {lat: 49.260605, lng: -123.246214};
+      var acc_1 = {lat: 49.2601464, lng: -123.2454362};
+      var acc_2 = {lat: 49.260479, lng: -123.2476892};
+      var acc_3 = {lat: 49.260479, lng: -123.2476892};
+      var acc_4 = {lat: 49.260479, lng: -123.2476892};
 
-	});
+      var map;
 
-      function initMap() {
-        var acc_0 = {lat: 49.206, lng: -122.910};
-        var acc_1 = {lat: 49.215, lng: -122.920};
-        var acc_2 = {lat: 49.223, lng: -122.892};
-        var acc_3 = {lat: 49.202, lng: -122.940};
-        var acc_4 = {lat: 49.218, lng: -122.892};
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 49.2606052, lng: -123.2459939},
+        zoom: 15
+      });
 
-		icon = 'https://maps.google.com/mapfiles/kml/shapes/flag_maps.png';
+      var marker0 = new google.maps.Marker({
+        position: acc_0,
+        map: map
+      });
 
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 13,
-          center: acc_1
-          <!--zoom: 4,-->
-        <!--center: {lat: -28, lng: 137}-->
+      var marker = new google.maps.Marker({
+        position: acc_1,
+        map: map,
+      });
+    
+      var marker2 = new google.maps.Marker({
+        position: acc_2,
+        map: map,
+      });
+    
+      var marker3 = new google.maps.Marker({
+        position: acc_3,
+        map: map,
+      });
 
-        <!--
-        });
-
-
-        var marker0 = new google.maps.Marker({
-          position: acc_0,
-          map: map,
-          icon: icon
-        });
-
-        var marker = new google.maps.Marker({
-          position: acc_1,
-          map: map,
-          icon: icon
-        });
-        var marker2 = new google.maps.Marker({
-          position: acc_2,
-          map: map,
-          icon: icon
-        });
-        var marker3 = new google.maps.Marker({
-          position: acc_3,
-          map: map,
-          icon: icon
-        });
-
-        var marker4 = new google.maps.Marker({
-          position: acc_4,
-          map: map,
-          icon: 'road.png'
-        });
-
-        var acc_text_0 = "New Westminster City Hall <br><br><strong>Description: </strong>The city hall needs your help! <br>Too many cars are stuck on the hill, <br>we would really appreciate it if the <br>community can help with clearing the snow!";
-        var acc_text_1 = "668 Columbia Street <br><br><strong>Description: </strong>Car stuck on hill, need help clearing <br>the snow";
-        var acc_text_2 = "109 Francis Way <br><br><strong>Description: </strong>Family away on vacation, can someone <br>please help shovel snow on the <br>sidewalk? Thank you in advance!";
-        var acc_text_3 = "1045 Quayside Drive <br><br><strong>Description: </strong>Fallen tree in the front yard, would <br>appreciate it if someone can <br>help me clear it!</p>";
-
-
-        var infowindow0 = new google.maps.InfoWindow({
-			content: acc_text_0
-		  });
-
-        marker0.addListener('click', function() {
-			infowindow0.open(map, marker0);
-		  });
-
-
-        var infowindow = new google.maps.InfoWindow({
-			content: acc_text_1
-		  });
-
-		marker.addListener('click', function() {
-			infowindow.open(map, marker);
-		  });
-
-		var infowindow2 = new google.maps.InfoWindow({
-			content: acc_text_2
-		  });
-
-		marker2.addListener('click', function() {
-			infowindow2.open(map, marker2);
-		  });
-
-		var infowindow3 = new google.maps.InfoWindow({
-			content: acc_text_3
-		  });
-
-		marker3.addListener('click', function() {
-			infowindow3.open(map, marker3);
-		  });
-
-
-        $( "#post0" ).click(function() {
-  			infowindow0.open(map, marker0);
-		});
-
-        $( "#post1" ).click(function() {
-  			infowindow.open(map, marker);
-		});
-
-		$( "#post2" ).click(function() {
-  			infowindow2.open(map, marker2);
-		});
-
-		$( "#post3" ).click(function() {
-  			infowindow3.open(map, marker3);
-		});
-
-
-        map.data.loadGeoJson(
-        'BUS_ROUTES.geojson');
-    }
-
-    function filterAll() {
-      document.getElementById("post0").style.display = "";
-      document.getElementById("post1").style.display = "";
-      document.getElementById("post2").style.display = "";
-      document.getElementById("post3").style.display = "";
-      document.getElementById("post4").style.display = "";
-      document.getElementById("post5").style.display = "";
-      document.getElementById("post6").style.display = "";
-    }
-    function filterSnow() {
-      document.getElementById("post0").style.display = "";
-      document.getElementById("post1").style.display = "";
-      document.getElementById("post2").style.display = "";
-      document.getElementById("post3").style.display = "none";
-      document.getElementById("post4").style.display = "";
-      document.getElementById("post5").style.display = "";
-      document.getElementById("post6").style.display = "none";
-    }
-
-    function filterTree() {
-      document.getElementById("post0").style.display = "none";
-      document.getElementById("post1").style.display = "";
-      document.getElementById("post2").style.display = "none";
-      document.getElementById("post3").style.display = "";
-      document.getElementById("post4").style.display = "none";
-      document.getElementById("post5").style.display = "none";
-      document.getElementById("post6").style.display = "";
-    }
-
-    function filterOther() {
-      document.getElementById("post0").style.display = "none";
-      document.getElementById("post1").style.display = "none";
-      document.getElementById("post2").style.display = "none";
-      document.getElementById("post3").style.display = "none";
-      document.getElementById("post4").style.display = "none";
-      document.getElementById("post5").style.display = "none";
-      document.getElementById("post6").style.display = "none";
-    }
-
-    function filterHigh() {
-      document.getElementById("post0").style.display = "";
-      document.getElementById("post1").style.display = "";
-      document.getElementById("post2").style.display = "none";
-      document.getElementById("post3").style.display = "none";
-      document.getElementById("post4").style.display = "none";
-      document.getElementById("post5").style.display = "none";
-      document.getElementById("post6").style.display = "";
-    }
-
-    function filterMedium() {
-      document.getElementById("post0").style.display = "none";
-      document.getElementById("post1").style.display = "none";
-      document.getElementById("post2").style.display = "";
-      document.getElementById("post3").style.display = "none";
-      document.getElementById("post4").style.display = "none";
-      document.getElementById("post5").style.display = "";
-      document.getElementById("post6").style.display = "none";
-    }
-    function filterLow() {
-      document.getElementById("post0").style.display = "none";
-      document.getElementById("post1").style.display = "none";
-      document.getElementById("post2").style.display = "none";
-      document.getElementById("post3").style.display = "";
-      document.getElementById("post4").style.display = "";
-      document.getElementById("post5").style.display = "none";
-      document.getElementById("post6").style.display = "none";
-    }
+      var marker4 = new google.maps.Marker({
+        position: acc_4,
+        map: map,
+      });
+    }  
     </script>
+      
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzIJK2jYh-K8EMENlbTxm1_PYRK4Kq4p4&callback=initMap">
-    </script>-->
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Your Website 2016</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
-                        </li>
-                        <li><a href="#">Terms of Use</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzIJK2jYh-K8EMENlbTxm1_PYRK4Kq4p4&callback=initMap"></script>
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
