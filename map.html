@@ -251,11 +251,11 @@
     
 <script>
     function initMap() {
-      var acc_0 = {lat: 49.260605, lng: -123.246214};
-      var acc_1 = {lat: 49.2601464, lng: -123.2454362};
-      var acc_2 = {lat: 49.260479, lng: -123.2476892};
-      var acc_3 = {lat: 49.260479, lng: -123.2476892};
-      var acc_4 = {lat: 49.260479, lng: -123.2476892};
+      var acc_0 = {lat: 49.260038, lng: -123.249427};
+      var acc_1 = {lat: 49.261837, lng: -123.246756};
+      var acc_2 = {lat: 49.261837, lng: -123.246756};
+      var acc_3 = {lat: 49.259287, lng: -123.247986};
+      var acc_4 = {lat: 49.260975, lng: -123.244790};
 
       var map;
 
@@ -288,6 +288,60 @@
         position: acc_4,
         map: map,
       });
+
+      var acc_text_0 = "Tuna Sushi Cone <br><br><strong>Description: </strong>spicy albacore, hand rolled with avocado, cucumber, pickled ginger, tempura, micro cilantro, green onion, soy paper wrapper";
+      var acc_text_1 = "Prawn Ravioli <br><br><strong>Description: </strong>butternut squash and mascarpone ravioli, truffle butter sauce, sautéed jumbo prawns, pine nuts";
+      var acc_text_2 = "Soy Dijon Salmon <br><br><strong>Description: </strong>steelhead, whole grain barley, snap peas, shiitake mushrooms, soy butter sauce, grape tomatoes, cilantro";
+      var acc_text_3 = "Kimchi Fried Rice <br><br><strong>Description: </strong>fried rice with kimchi made with love";
+
+      var infowindow0 = new google.maps.InfoWindow({
+        content: acc_text_0
+		  });
+
+      marker0.addListener('click', function() {
+        infowindow0.open(map, marker0);
+		  });
+      
+      var infowindow = new google.maps.InfoWindow({
+			  content: acc_text_1
+		  });
+      
+      marker.addListener('click', function() {
+			  infowindow.open(map, marker);
+		  });
+
+		  var infowindow2 = new google.maps.InfoWindow({
+			  content: acc_text_2
+		  });
+
+		  marker2.addListener('click', function() {
+			  infowindow2.open(map, marker2);
+		  });
+
+		  var infowindow3 = new google.maps.InfoWindow({
+			  content: acc_text_3
+		  });
+
+		  marker3.addListener('click', function() {
+			  infowindow3.open(map, marker3);
+		  });
+
+
+      $( "#post0" ).click(function() {
+  			infowindow0.open(map, marker0);
+		  });
+
+      $( "#post1" ).click(function() {
+  			infowindow.open(map, marker);
+		  });
+
+		  $( "#post2" ).click(function() {
+  			infowindow2.open(map, marker2);
+		  });
+
+		  $( "#post3" ).click(function() {
+  			infowindow3.open(map, marker3);
+		  });    
     }  
 </script>
       
