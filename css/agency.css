@@ -539,15 +539,18 @@ section h3.section-subheading {
   margin-bottom: 50px;
 }
 .team-member img {
-  margin: 0 auto;
+  margin-left:100px;
+
   border: 7px solid white;
 }
 .team-member h4 {
+  margin-left:100px;
   margin-top: 25px;
   margin-bottom: 0;
   text-transform: none;
 }
 .team-member p {
+  margin-left:100px;
   margin-top: 0;
 }
 aside.clients img {
