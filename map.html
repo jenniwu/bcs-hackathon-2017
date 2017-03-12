@@ -82,6 +82,7 @@
     <div class="container">
       <div class="intro-text">
         <div class="intro-heading">Explore your cultural tastebuds</div>
+        <div class="intro-lead-in">Hungry swappers near you:</div>
       </div>
     </div>
   </header>
@@ -251,7 +252,7 @@
         </div>
       </div>
     </footer>
-    
+
 <script>
 
     function initMap() {
@@ -277,12 +278,12 @@
         position: acc_1,
         map: map,
       });
-    
+
       var marker2 = new google.maps.Marker({
         position: acc_2,
         map: map,
       });
-    
+
       var marker3 = new google.maps.Marker({
         position: acc_3,
         map: map,
@@ -305,11 +306,11 @@
       marker0.addListener('click', function() {
         infowindow0.open(map, marker0);
 		  });
-      
+
       var infowindow = new google.maps.InfoWindow({
 			  content: acc_text_1
 		  });
-      
+
       marker.addListener('click', function() {
 			  infowindow.open(map, marker);
 		  });
@@ -345,10 +346,10 @@
 
 		  $( "#post3" ).click(function() {
   			infowindow3.open(map, marker3);
-		  });    
-    }  
+		  });
+    }
 </script>
-      
+
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzIJK2jYh-K8EMENlbTxm1_PYRK4Kq4p4&callback=initMap"></script>
 
     <!-- jQuery -->
